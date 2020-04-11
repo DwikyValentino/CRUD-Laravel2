@@ -1,3 +1,6 @@
+{{-- @extends('persediaanbarang') --}}
+{{-- @include('persediaanbarang') --}}
+
 <nav class="sidebar-nav">
     <ul class="nav">
         <li class="nav-item">
@@ -6,23 +9,18 @@
             </a>
         </li>
 
-        <li class="nav-title">MANAJEMEN PRODUK</li>
+        <li class="nav-title">MANAJEMEN PERSEDIAAN BARANG</li>
         <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="nav-icon icon-drop"></i> Kategori
+            <a class="nav-link" href="{{route('persediaanbarang.index')}}">
+                <i class="nav-icon icon-drop">PersediaanBarang</i>
             </a>
         </li>
-        <li class="nav-item nav-dropdown">
-            <a class="nav-link nav-dropdown-toggle" href="#">
-                <i class="nav-icon icon-settings"></i> Pengaturan
-            </a>
-            <ul class="nav-dropdown-items">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="nav-icon icon-puzzle"></i> Toko
+        <!-- <li class="nav-item nav-dropdown">
+            <a class="">
+                        <i class="nav-icon icon-puzzle"></i> Gudang
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> -->
     </ul>
 </nav>

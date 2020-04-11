@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/persediaanbarang.index', 'PersediaanBarangController@index');
+Route::get('/search', 'PersediaanBarangController@search');
+Route::delete('/deleteall', 'PersediaanBarangController@deleteAll');
+// Route::get('/crud', 'CRUDController@create');
+Route::resource('persediaanbarang', 'PersediaanBarangController');
+// Route::resource('cruds', 'CRUDController');
